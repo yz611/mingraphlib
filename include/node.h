@@ -6,11 +6,11 @@
 class Node
 {
 protected:
-    Coordinate* m_Coordinate;
+    Coordinate* m_pCoordinate;
 
 public:
     Node(int x, int y);
-    ~Node() {};
+    ~Node();
 };
 
 #endif // NODE_H

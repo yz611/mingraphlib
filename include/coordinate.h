@@ -1,14 +1,12 @@
-#if !defined(COORDINATE_H)
+#ifndef COORDINATE_H
 #define COORDINATE_H
 
-class Coordinate
+struct Coordinate
 {
-protected:
-    int x;
-    int y;
-public:
-    Coordinate(int x, int y);
-    ~Coordinate();
+    int m_x;
+    int m_y;
+    Coordinate(int x, int y): m_x(x), m_y(y) {};
+    ~Coordinate() {};
 };
 
 #endif // COORDINATE_H
